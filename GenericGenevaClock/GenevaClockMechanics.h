@@ -6,6 +6,9 @@
 //      https://www.printables.com/model/717033-geneva-clock and
 //      https://cults3d.com/en/3d-model/home/geneva-clock
 //
+// This class derives from the GenericClockBoard class.  Information can be found
+// at https://github.com/regnaDkciN/Generic-Clock-Board .
+//
 // It controls a stepper motor, such as the 28BYJ-48 by updating the clock's
 // position once per minute.  It also contains methods to home, and calibrate
 // the home position of the clock.

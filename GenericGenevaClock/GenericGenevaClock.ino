@@ -6,14 +6,16 @@
 //      https://www.printables.com/model/717033-geneva-clock and
 //      https://cults3d.com/en/3d-model/home/geneva-clock
 // This version makes the following modifications:
-//      1. Uses the WiFiTimeManager library to handle timezone, DST, and NTP
-//         maintenance: https://github.com/regnaDkciN/WiFiTimeManager
-//      2. Adds an optional real time clock (RTC) as a backup in case network
+//      1. Uses the GenericClockBoard hardware at
+//         https://github.com/regnaDkciN/Generic-Clock-Board .
+//      2. Uses the WiFiTimeManager library to handle timezone, DST, and NTP
+//         maintenance: https://github.com/regnaDkciN/WiFiTimeManager .
+//      3. Adds an optional real time clock (RTC) as a backup in case network
 //         connections fails.
-//      3. Broke out motor interface code into a separate class
+//      4. Broke out motor interface code into a separate class
 //         (GenevaClockMechanics) that uses different algorithms for motor
 //         stepping and clock positioning.
-//      4. 28BYJ-48 stepper motors are geared such that the actual steps
+//      5. 28BYJ-48 stepper motors are geared such that the actual steps
 //         per revolution using half steps are 4075.52 as opposed to the 4096
 //         that is normally used in Arduino code.  Due to this, there is some
 //         daily clock drift.  To accommodate this, the clock can be optionally
