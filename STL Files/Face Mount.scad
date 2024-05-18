@@ -41,6 +41,5 @@ module FullPost()
         cylinder(d = 4, h = 4);
 }
 
-//FixedFace();
-!FullPost();
-//OriginalPost();
+!FixedFace();
+FullPost();

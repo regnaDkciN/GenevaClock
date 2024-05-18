@@ -41,8 +41,8 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 #include <String>                   // For String class.
-#include "GenevaClockMechanics.h"   // For GenevaClockMechanics (clock mechanics).
 #include <WiFiTimeManager.h>        // Manages timezone, DST, and NTP.
+#include "GenevaClockMechanics.h"   // For GenevaClockMechanics (clock mechanics).
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -328,7 +328,7 @@ void setup()
     // calibration to begin.
     if (gClock.IsButtonPressed())
     {
-         gClock.RgbLed.brightness(RGBLed::WHITE, 2);
+        gClock.RgbLed.brightness(RGBLed::WHITE, 2);
         delay(2000);
         gClock.Calibrate();
     }
