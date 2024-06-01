@@ -1,3 +1,5 @@
+// Consider shortening the post by about 3mm to reduce parallax.
+
 $fn = 36;
 
 module OriginalPost()
